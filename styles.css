@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'HarryP';
+  src: local('HarryP'), url(./fonts/HARRYP__.TTF) format('truetype');
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #d25e1f;
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  margin: 60px;
+}
+
+.headline {
+  font-family: 'HarryP', Helvetica, sans-serif;
+  font-size: 70px;
+}
+
+.tagline, .counter, .question, .option, .score {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.large {
+  font-family: 'HarryP', Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.counter {
+  margin: 5px;
+}
+
+.quiz {
+  width: 70%;
+  height: 250px;
+  margin: auto;
+  background-color: #f5a630;
+  box-shadow: 2px 2px 8px #333;
+}
+
+.question {
+  padding: 30px;
+  font-size: 24px;
+}
+
+.option {
+  height: 60px;
+  width: 23%;
+  background-color: #ffe9cc;
+  color: #333;
+  border: 3px solid #d25e1f;
+  cursor: pointer;
+}
+
+.score {
+  margin: 30px;
+  font-size: 36px;
+}
