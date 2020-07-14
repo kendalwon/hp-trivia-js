@@ -49,6 +49,11 @@ body {
   font-size: 24px;
 }
 
+.options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .option {
   height: 60px;
   width: 23%;
