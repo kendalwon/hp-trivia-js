@@ -20,20 +20,22 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 const handleOptionClick = (e) => {
+  let value = e.target.innerHTML;
   if (currentQuestion == 19) {
+    if (checkAnswer(currentAnswer, value)) {
+      correct++;
+    };
     displayScore(correct, totalQuestions);
     currentQuestion++;
     counter.innerHTML = '';
   } else {
-    let value = e.target.innerHTML;
     if (checkAnswer(currentAnswer, value)) {
       correct++;
     };
     currentQuestion++;
-    displayQuestion(questions[currentQuestion]);
+    currentAnswer = displayQuestion(questions[currentQuestion]);
     displayCounter(currentQuestion + 1, totalQuestions);
-  }
-  
+  } 
 }
 
 options.forEach(option => option.addEventListener('click', handleOptionClick));

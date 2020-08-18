@@ -14,7 +14,7 @@ body {
 }
 
 .title {
-  margin: 60px;
+  margin: 30px;
 }
 
 .headline {
@@ -33,30 +33,35 @@ body {
 }
 
 .counter {
-  margin: 5px;
+  width: 90%;
+  font-size: 12px;
+  margin: 0 0 5px 4%;
+  text-align: right;
 }
 
 .quiz {
-  width: 70%;
-  height: 250px;
+  width: 90%;
   margin: auto;
   background-color: #f5a630;
   box-shadow: 2px 2px 8px #333;
 }
 
 .question {
-  padding: 30px;
-  font-size: 24px;
+  padding: 20px;
+  font-size: 20px;
 }
 
 .options {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .option {
-  height: 60px;
-  width: 23%;
+  height: 40px;
+  width: 90%;
+  margin: 0 0 10px 5%;
   background-color: #ffe9cc;
   color: #333;
   border: 3px solid #d25e1f;
@@ -64,6 +69,42 @@ body {
 }
 
 .score {
-  margin: 30px;
-  font-size: 36px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 400px) {
+  .title {
+    margin: 60px;
+  }
+  .options {
+    flex-direction: row;
+  }
+  .option {
+    height: 70px;
+    width: 23%;
+    margin: 0;
+  }
+  .question {
+    padding: 30px;
+    font-size: 24px;
+  }
+  .score {
+    margin: 30px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .counter {
+    width: 70%;
+    margin: 0 0 5px 14%;
+  }
+  .quiz {
+    width: 70%;
+  }
+  .question {
+    padding: 40px 100px;
+  }
 }
