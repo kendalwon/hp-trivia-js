@@ -1,6 +1,7 @@
 import { shuffle } from "./shuffle.js";
 
 export const displayQuestion = (data) => {
+  let answer = data.answer;
   question.innerHTML = data.question;
   let options = [];
   options.push(data.answer, data.optionA, data.optionB, data.optionC);
@@ -9,6 +10,7 @@ export const displayQuestion = (data) => {
   option2.innerHTML = options[1];
   option3.innerHTML = options[2];
   option4.innerHTML = options[3];
+  return answer;
 }
 
 
